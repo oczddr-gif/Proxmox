@@ -5,7 +5,7 @@ set -Eeuo pipefail
 trap 'echo; echo "[ERROR] on line $LINENO"; exit 1' ERR
 
 # --- Settings (можно менять) ---
-HAOS_URL=${HAOS_URL:-"https://github.com/home-assistant/operating-system/releases/latest/download/haos_ova.qcow2.xz"}
+HAOS_URL=${HAOS_URL:-"https://github.com/home-assistant/operating-system/releases/download/16.2/haos_ova-16.2.qcow2.xz"}
 VMNAME=${VMNAME:-"home-assistant-os"}
 DISK_SIZE=${DISK_SIZE:-"32G"}
 RAM=${RAM:-4096}
